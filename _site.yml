@@ -1,0 +1,21 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "Mengyu Zhang"
+  href: index.html
+  left:
+    - text: "About"
+      href: about.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<mz2777@columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/mz2777/
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    mathjax: null
+    toc_depth: 3
+    toc_float:
+      collapsed: false

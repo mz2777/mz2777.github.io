@@ -1,0 +1,26 @@
+---
+title: "**Mengyu Zhang**"
+output: 
+  html_document
+---
+<img src = "images/IMG_9102.JPG" style = "padding:50px; width:50%" align = "right">
+
+Master Student in Biostatistics
+
+Columbia University Mailman School of Public Health
+
+
+
+
+### **About Me**
+
+I graduated with a Bachelor of Science degree in Statistics from Central South University in China in June 2019.  Now I am pursuing my Master's degree at Columbia University Mailman School of Public Health.
+
+Since 2015, I have been studying Statistics at the School of Mathematics and Statistics of the Central South University of China where it has one of the top statistical programs in the country. Through the nearly four-year undergraduate study, I have a firm grounding in mathematical and statistical theories, methodologies like linear algebra, probability and statistical methods, optimization, regression. 
+
+I have mastered the implementation of the advanced statistical methods through software and programming languages including R, Python (TensorFlow, etc.), and C++. I have been strongly interested in machine learning for years and programmed extensively in R and Python during the undergraduate study, such as support vector machine, LightGBM, neural network, etc. 
+
+In addition to my data analysis and technical skills, I also have experience working with research teams. I worked in a team of four other students, supervised by an Attending Doctor, to investigated risk factors for gout in Xiangya Hospital of Central South University in Changsha City. In this role, I was the primary individual responsible for data analysis including analysis of variance, chi-square test and logistic regression analysis.
+
+
+
