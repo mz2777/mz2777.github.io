@@ -12,7 +12,7 @@
 
 
 
-<title>Mengyu Zhang</title>
+<title>Resume</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -250,6 +253,63 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -257,6 +317,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -309,24 +379,76 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><strong>Mengyu Zhang</strong></h1>
+<h1 class="title toc-ignore"><strong>Resume</strong></h1>
 
 </div>
 
 
-<p><img src = "images/IMG_9102.jpg" style = "padding:50px; width:50%" align = "right"></p>
-<p>Master Student in Biostatistics</p>
-<p>Columbia University Mailman School of Public Health</p>
-<div id="about-me" class="section level3">
-<h3><strong>About Me</strong></h3>
-<p>I graduated with a Bachelor of Science degree in Statistics from Central South University in China in June 2019. Now I am pursuing my Master’s degree at Columbia University Mailman School of Public Health.</p>
-<p>Since 2015, I have been studying Statistics at the School of Mathematics and Statistics of the Central South University of China where it has one of the top statistical programs in the country. Through the nearly four-year undergraduate study, I have a firm grounding in mathematical and statistical theories, methodologies like linear algebra, probability and statistical methods, optimization, regression.</p>
-<p>I have mastered the implementation of the advanced statistical methods through software and programming languages including R, Python (TensorFlow, etc.), and C++. I have been strongly interested in machine learning for years and programmed extensively in R and Python during the undergraduate study, such as support vector machine, LightGBM, neural network, etc.</p>
-<p>In addition to my data analysis and technical skills, I also have experience working with research teams. I worked in a team of four other students, supervised by an Attending Doctor, to investigated risk factors for gout in Xiangya Hospital of Central South University in Changsha City. In this role, I was the primary individual responsible for data analysis including analysis of variance, chi-square test and logistic regression analysis.</p>
+<p><img src = "images/Mengyu%20Zhang_ID%20photo.jpg" style = "padding:50px; width:40%" align = "right"></p>
+<div id="mengyu-zhang" class="section level2">
+<h2><strong>Mengyu Zhang</strong></h2>
+<p>Email: <a href="mailto:mz2777@columbia.edu" class="email">mz2777@columbia.edu</a></p>
+<p>Adress: 50 Haven Avenue, New York, 10032</p>
+<p>Tel: (646) 886-5525</p>
+</div>
+<div id="education" class="section level2">
+<h2><strong>Education</strong></h2>
+<p><strong>Master of Science, Biostatistics</strong>, Mailman School of Public Health, Columbia University, expected May 2021</p>
+<p><strong>Bachelor of Science, Statistics</strong>, Central South University, China, June 2019</p>
+<p>Honors: Third-Class Scholarship (2015-2016, 2016-2017); Second-Class Scholarship (2017-2018)</p>
+</div>
+<div id="selected-academic-research" class="section level2">
+<h2><strong>Selected Academic Research</strong></h2>
+<p><strong>Feature Selection Method Based on Alternating Direction Multiplier Method and its Application in Multi- Classification Problem</strong> 03/ 2019-05/ 2019</p>
+<p><em><strong>Supervisor:</strong></em> Prof. Qingsong Xu, Central South University</p>
+<ul>
+<li><p>Bachelor’s Thesis</p></li>
+<li><p>Used an exact supervised sparsity-inducing feature selection method lp-Box ADMM to select features in multi-class dataset with Python.</p></li>
+<li><p>Nearest Neighbor method was used to determine two hyperparameters in lp-Box ADMM algorithm.</p></li>
+<li><p>BP neural network is used for multi-class prediction.</p></li>
+</ul>
+<p><strong>The Study of Diabetes Associated Index and Blood Glucose Concentration Accurate Prediction</strong> 05/2018</p>
+<p><em><strong>Supervisor:</strong></em> Prof. Yanru Wang, Central South University</p>
+<ul>
+<li><p>After data cleaning, factor analysis is used to reduce the dimensionality of 33 indicators, and corresponding analysis is used to find indicators that help with the diagnosis of diabetes.</p></li>
+<li><p>Divided the training set samples into three categories by cluster, preparing for later classification regression to predict blood glucose concentration</p></li>
+<li><p>LASSO piecewise regression and LightGBM regression with 5-fold cross-validation were used separately to predict the prediction of blood glucose concentration</p></li>
+</ul>
+<p><strong>An Investigation of Risk Factors for Gout in Xiangya Hospital of Central South University in Changsha City</strong> 05/2017-05/2018</p>
+<p><em><strong>Supervisor:</strong></em> Wangbin Ning (Attending Doc), Xiangya School of Medicine, Central South University</p>
+<ul>
+<li><p>Conducted a questionnaire survey among patients with gout and those without it in Changsha City confirmed by rheumatology and immunology department of Xiangya Hospital, input the date in SPSS and then analyzed them by approaches including analysis of variance, chi-square test, logistic regression analysis and so forth</p></li>
+<li><p>Explored the risk factors according to analysis results and gave suggestions to prevent gout attacks</p></li>
+<li><p>Obtained Project Approval in Central South University</p></li>
+</ul>
+</div>
+<div id="activities" class="section level2">
+<h2><strong>Activities</strong></h2>
+<p><strong>The Similarities and Differences of the Usage of Clean, Renewable Energy Among Texas, Arizona, New Mexico and California Caused by Population, Gross Domestic Product and Technology</strong> 02/2018</p>
+<p><em>Team Member, Interdisciplinary Contest in Modeling</em></p>
+<ul>
+<li><p>Established a model to characterize how the energy profile of each of the four states has evolved from 1960 to 2009</p></li>
+<li><p>Determined which of the four states appeared to have the “best” profile for the use of cleaner, renewable energy</p></li>
+<li><p>Predicted the energy profile of each state based on the historical evaluation of energy use in these states, and my understanding of the differences between the state profiles I established</p></li>
+<li><p>Received the award of Honorable Mention</p></li>
+</ul>
+<p><strong>Optimizing the Passenger Throughput at an Airport Security Checkpoint</strong> 01/2017</p>
+<p><em>Team Member, Interdisciplinary Contest in Modeling</em></p>
+<ul>
+<li><p>Developed and implemented models to explore the flow of passenger through the security checkpoints and identify bottlenecks at Chicago ‘s O’Hare International Airport</p></li>
+<li><p>Found creative solutions to optimize the passenger throughput through data analysis and simulation</p></li>
+<li><p>Received the award of Honorable Mention</p></li>
+</ul>
+</div>
+<div id="computer-skills" class="section level2">
+<h2><strong>Computer Skills</strong></h2>
+<p>Python, R</p>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -359,6 +481,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 
 </body>

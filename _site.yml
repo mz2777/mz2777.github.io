@@ -4,9 +4,14 @@ navbar:
   title: "Mengyu Zhang"
   href: index.html
   left:
-    - text: "About"
-      href: about.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Dashboards"
+      href: dashboards.html
   right:
+    - text: ""
+      icon: fa-info
+      href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<mz2777@columbia.edu>
     - icon: fa-github fa-lg
@@ -18,4 +23,4 @@ output:
     mathjax: null
     toc_depth: 3
     toc_float:
-      collapsed: false
+      collapsed: true

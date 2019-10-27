@@ -1,0 +1,77 @@
+---
+title: "Dashboards"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    source_code: embed
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(flexdashboard)
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(plotly)
+library(leaflet)
+```
+
+```{r get data, include=FALSE}
+#get data
+library(p8105.datasets)
+data("rest_inspec")
+force(rest_inspec)
+```
+
+
+```{r, include=FALSE}
+#clean data
+nyc = rest_inspec %>%
+  drop_na() %>% 
+  filter(boro != "Missing",
+         grade != "Not Yet Graded") %>% 
+  sample_n(5000)
+```
+
+Column
+-----------------------------------------------------------------------
+    
+### The Distribution of Restaurant Graded A, B and C
+    
+```{r, echo =FALSE}
+nyc %>% 
+  group_by(boro, critical_flag) %>% 
+  summarise(n_obs = n()) %>% 
+  plot_ly(x = ~boro, y = ~n_obs, color = ~critical_flag,
+          type = "bar", alpha = 0.7) %>% 
+  layout(xaxis = list(title = "Boroughs"), yaxis = list(title = "Counts"))
+```
+   
+Column 
+-----------------------------------------------------------------------
+   
+### The Distribution of Score in Five Boroughs
+
+```{r, echo =FALSE}
+nyc %>% 
+  mutate(boro = forcats::fct_reorder(boro, score)) %>% 
+  plot_ly(y = ~score, color = ~boro,
+          type = "violin", alpha = 0.5) %>% 
+  layout(xaxis = list(title = "Boroughs"), yaxis = list(title = "Score"))
+```   
+ 
+### The Distribution of Score by Grades
+    
+```{r, echo =FALSE}
+nyc %>% 
+  mutate(grade = forcats::fct_reorder(grade, score)) %>%
+  plot_ly(y = ~score, color = ~grade,
+          type = "box", alpha = 0.5) %>% 
+    layout(xaxis = list(title = "Grade"), yaxis = list(title = "Score"))
+```
+
+
+
+

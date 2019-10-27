@@ -1,0 +1,86 @@
+---
+title: "**Resume**"
+output:
+    html_document: 
+      toc: true
+      toc_float: true
+---
+<img src = "images/Mengyu Zhang_ID photo.JPG" style = "padding:50px; width:40%" align = "right">
+
+## **Mengyu Zhang**
+
+Email: mz2777@columbia.edu 
+
+Adress: 50 Haven Avenue, New York, 10032  
+
+Tel: (646) 886-5525 
+
+## **Education**
+
+**Master of Science, Biostatistics**, Mailman School of Public Health, Columbia University, expected May 2021
+
+**Bachelor of Science, Statistics**, Central South University, China, June 2019
+
+   Honors: Third-Class Scholarship (2015-2016, 2016-2017); Second-Class Scholarship (2017-2018)
+
+## **Selected Academic Research**
+
+**Feature Selection Method Based on Alternating Direction Multiplier Method and its Application in Multi- Classification Problem**   03/ 2019-05/ 2019 
+
+_**Supervisor:**_ Prof. Qingsong Xu, Central South University
+
+* Bachelor’s Thesis
+
+* Used an exact supervised sparsity-inducing feature selection method lp-Box ADMM to select features in multi-class dataset with Python.
+
+* Nearest Neighbor method was used to determine two hyperparameters in lp-Box ADMM algorithm.
+
+* BP neural network is used for multi-class prediction.
+
+**The Study of Diabetes Associated Index and Blood Glucose Concentration Accurate Prediction**   05/2018
+
+_**Supervisor:**_ Prof. Yanru Wang, Central South University 
+
+* After data cleaning, factor analysis is used to reduce the dimensionality of 33 indicators, and corresponding analysis is used to find indicators that help with the diagnosis of diabetes.
+
+* Divided the training set samples into three categories by cluster, preparing for later classification regression to predict blood glucose concentration
+
+* LASSO piecewise regression and LightGBM regression with 5-fold cross-validation were used separately to predict the prediction of blood glucose concentration
+
+**An Investigation of Risk Factors for Gout in Xiangya Hospital of Central South University in Changsha City**   05/2017-05/2018
+
+_**Supervisor:**_ Wangbin Ning (Attending Doc), Xiangya School of Medicine, Central South University 
+
+* Conducted a questionnaire survey among patients with gout and those without it in Changsha City confirmed by rheumatology and immunology department of Xiangya Hospital, input the date in SPSS and then analyzed them by approaches including analysis of variance, chi-square test, logistic regression analysis and so forth
+
+* Explored the risk factors according to analysis results and gave suggestions to prevent gout attacks
+
+* Obtained Project Approval in Central South University
+
+## **Activities**
+
+**The Similarities and Differences of the Usage of Clean, Renewable Energy Among Texas, Arizona, New Mexico and California Caused by Population, Gross Domestic Product and Technology**   02/2018 
+
+_Team Member, Interdisciplinary Contest in Modeling_
+
+* Established a model to characterize how the energy profile of each of the four states has evolved from 1960 to 2009
+
+* Determined which of the four states appeared to have the “best” profile for the use of cleaner, renewable energy
+
+* Predicted the energy profile of each state based on the historical evaluation of energy use in these states, and my understanding of the differences between the state profiles I established
+
+* Received the award of Honorable Mention
+
+**Optimizing the Passenger Throughput at an Airport Security Checkpoint**   01/2017 
+
+_Team Member, Interdisciplinary Contest in Modeling_
+
+* Developed and implemented models to explore the flow of passenger through the security checkpoints and identify bottlenecks at Chicago ‘s O’Hare International Airport
+
+* Found creative solutions to optimize the passenger throughput through data analysis and simulation
+
+* Received the award of Honorable Mention
+
+## **Computer Skills**
+
+Python, R

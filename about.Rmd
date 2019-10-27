@@ -1,4 +1,12 @@
 ---
-title: "About"
+title: ""
 output: html_document
 ---
+
+Session information:
+
+```{r}
+sessionInfo()
+```
+
+
