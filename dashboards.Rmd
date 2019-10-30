@@ -12,10 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(flexdashboard)
 library(tidyverse)
-library(httr)
-library(jsonlite)
 library(plotly)
-library(leaflet)
 ```
 
 ```{r get data, include=FALSE}
