@@ -2,7 +2,7 @@
 title: "Dashboards"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     source_code: embed
 ---
 
@@ -29,24 +29,24 @@ nyc = rest_inspec %>%
   drop_na() %>% 
   filter(boro != "Missing",
          grade != "Not Yet Graded") %>% 
-  sample_n(5000)
+  sample_n(10000)
 ```
 
-Column
+Row
 -----------------------------------------------------------------------
     
-### The Number of restaurants in Five Boroughs by Critical Status
+### The Distribution of Score by Grades
     
 ```{r, echo =FALSE}
-nyc %>% 
-  group_by(boro, critical_flag) %>% 
-  summarise(n_obs = n()) %>% 
-  plot_ly(x = ~boro, y = ~n_obs, color = ~critical_flag,
-          type = "bar", alpha = 0.7) %>% 
-  layout(xaxis = list(title = "Boroughs"), yaxis = list(title = "Counts"))
+p = 
+  ggplot(nyc, aes(score, fill = grade)) + 
+  geom_density(alpha = 0.2) +  
+  theme_light()
+
+ggplotly(p)
 ```
    
-Column 
+Row
 -----------------------------------------------------------------------
    
 ### The Distribution of Score in Five Boroughs
@@ -59,14 +59,15 @@ nyc %>%
   layout(xaxis = list(title = "Boroughs"), yaxis = list(title = "Score"))
 ```   
  
-### The Distribution of Score by Grades
+### The Number of restaurants in Five Boroughs by Critical Status
     
 ```{r, echo =FALSE}
 nyc %>% 
-  mutate(grade = forcats::fct_reorder(grade, score)) %>%
-  plot_ly(y = ~score, color = ~grade,
-          type = "box", alpha = 0.5) %>% 
-    layout(xaxis = list(title = "Grade"), yaxis = list(title = "Score"))
+  group_by(boro, critical_flag) %>% 
+  summarise(n_obs = n()) %>% 
+  plot_ly(x = ~boro, y = ~n_obs, color = ~critical_flag,
+          type = "bar", alpha = 0.7) %>% 
+  layout(xaxis = list(title = "Boroughs"), yaxis = list(title = "Counts"))
 ```
 
 
