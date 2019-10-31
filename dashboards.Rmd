@@ -35,7 +35,7 @@ nyc = rest_inspec %>%
 Column
 -----------------------------------------------------------------------
     
-### The Distribution of Restaurant Graded A, B and C
+### The Number of restaurants in Five Boroughs by Critical Status
     
 ```{r, echo =FALSE}
 nyc %>% 
